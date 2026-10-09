@@ -1,0 +1,34 @@
+{
+  "id": "care-beyond",
+  "name": "Care Beyond Expectations",
+  "shortName": "Care Beyond",
+  "website": "https://carebeyondexp.com.au",
+  "email": "info@carebeyondexp.com.au",
+  "phone": "0459 157 002",
+  "address": "55 Flemington Road, North Melbourne",
+  "serviceArea": "Melbourne and surrounding areas",
+  "timezone": "Australia/Melbourne",
+  "hours": {
+    "weekdays": "8am–5pm",
+    "saturday": "9am–1pm",
+    "sunday": "Contact the team to confirm",
+    "publicHolidays": "Contact the team to confirm"
+  },
+  "registrationStatus": "unconfirmed",
+  "allowedOrigins": ["https://carebeyondexp.com.au", "https://www.carebeyondexp.com.au"],
+  "contactSource": "https://carebeyondexp.com.au/contact/",
+  "servicesSource": "https://carebeyondexp.com.au/our-services/",
+  "verifiedAt": "2026-10-09",
+  "services": [
+    {"name":"Group / Centre Activities", "slug":"group-centre-activities", "description":"Activities with others to explore interests, connect and practise everyday skills."},
+    {"name":"Participate Community", "slug":"participate-community", "description":"Support to take part in community activities, build relationships and explore your interests."},
+    {"name":"Household Tasks", "slug":"household-tasks", "description":"Practical assistance with household routines and opportunities to build skills."},
+    {"name":"Development of Life Skills", "slug":"development-of-life-skills", "description":"Hands-on support to develop practical everyday skills at your pace."},
+    {"name":"Innovative Community Participation", "slug":"innovative-community-participation", "description":"Personalised opportunities to explore strengths, interests and community connections."},
+    {"name":"Daily Tasks / Shared Living", "slug":"daily-tasks-shared-living", "description":"Practical assistance with daily routines in a shared home, shaped around your preferences."},
+    {"name":"Assist-Travel / Transport", "slug":"assist-travel-transport", "description":"Practical support with travel for appointments, activities, work and community participation."},
+    {"name":"Assist-Personal Activities", "slug":"assist-personal-activities", "description":"Respectful, discreet assistance with personal activities at your pace."},
+    {"name":"Assist-Life Stage, Transition", "slug":"assist-life-stage-transition", "description":"Planning and practical help through changes in routines, study, work or daily life."},
+    {"name":"Accommodation / Tenancy", "slug":"accommodation-tenancy", "description":"Help to explore housing choices, understand tenancy responsibilities and maintain a tenancy."}
+  ]
+}
