@@ -1,0 +1,20 @@
+{
+  "name": "care-beyond-ndis-assistant",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=22.16 <25" },
+  "scripts": {
+    "start": "node --env-file-if-exists=.env app/server.mjs",
+    "build": "node scripts/build.mjs",
+    "test": "node --test tests/*.test.mjs"
+  },
+  "dependencies": {
+    "nodemailer": "10.0.16",
+    "mammoth": "1.13.0",
+    "pdf-parse": "2.4.5"
+  },
+  "overrides": {
+    "argparse": "2.0.1"
+  }
+}
