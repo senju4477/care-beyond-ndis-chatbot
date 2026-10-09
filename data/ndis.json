@@ -1,0 +1,50 @@
+[
+  {
+    "id":"ndis-overview", "title":"About the NDIS", "scope":"ndis",
+    "url":"https://www.ndis.gov.au/understanding-ndis/about-ndis", "reviewedAt":"2026-10-09",
+    "keywords":["what is ndis","national disability insurance scheme","what does ndis do","ndia"],
+    "text":"The National Disability Insurance Scheme (NDIS) provides disability supports for eligible people. The National Disability Insurance Agency (NDIA) administers the scheme. Care Beyond Expectations is a support provider and cannot make NDIS access or funding decisions."
+  },
+  {
+    "id":"ndis-eligibility", "title":"NDIS eligibility requirements", "scope":"ndis",
+    "url":"https://www.ndis.gov.au/applying/eligibility-requirements/what-are-ndis-eligibility-requirements", "reviewedAt":"2026-10-09",
+    "keywords":["eligible","eligibility","qualify","under 65","residency","permanent disability","access requirements","can i get ndis"],
+    "text":"NDIS access depends on age, residency and the disability or early intervention requirements. You must be younger than 65 when you apply, live in Australia, and have an eligible citizenship or residency status. Evidence is needed. Your local NDIS partner can explain the requirements; the NDIA decides eligibility. This assistant cannot assess your personal eligibility."
+  },
+  {
+    "id":"ndis-apply", "title":"How to apply to the NDIS", "scope":"ndis",
+    "url":"https://www.ndis.gov.au/applying/application-process/how-apply", "reviewedAt":"2026-10-09",
+    "keywords":["apply","application","access request","join ndis","get started with ndis","evidence","ndis contact number","local area coordinator","lac"],
+    "text":"Start by contacting an NDIS partner. They can explain the application and evidence you need. Work with your treating health professional to gather evidence, complete your application and submit it to the NDIA. If you do not know your local partner, call the NDIS on 1800 800 110."
+  },
+  {
+    "id":"ndis-management", "title":"Ways to manage NDIS funding", "scope":"ndis",
+    "url":"https://www.ndis.gov.au/participants/using-your-funding/plan-implementation-meeting/guide-your-management-options", "reviewedAt":"2026-10-09",
+    "keywords":["plan management","plan managed","agency managed","ndia managed","self managed","manage funding","funding types","plan manager","difference"],
+    "text":"There are three funding management options. Self-managed: you or your representative pay providers and manage records. Plan-managed: a registered plan manager handles payments and records. NDIA-managed (agency-managed): the NDIA manages provider payments and records. Your plan can combine these options. Spending must be on NDIS supports in line with your plan."
+  },
+  {
+    "id":"ndis-self-managed", "title":"Self-managed NDIS funding", "scope":"ndis",
+    "url":"https://www.ndis.gov.au/participants/using-your-funding/self-managed-funding/what-self-managed-funding", "reviewedAt":"2026-10-09",
+    "keywords":["self managed","self management","pay my providers","self manage"],
+    "text":"With self-management, you or your representative manage the funding, pay providers and keep records. You are responsible for using funding in line with your plan and making it last. You can generally choose registered or unregistered providers, although some supports require registered providers. Check the current requirements for the support you want."
+  },
+  {
+    "id":"ndis-plan-managed", "title":"Plan-managed NDIS funding", "scope":"ndis",
+    "url":"https://www.ndis.gov.au/participants/using-your-funding/plan-managed-funding/what-plan-managed-funding", "reviewedAt":"2026-10-09",
+    "keywords":["plan managed","plan manager","invoices","who pays","plan management"],
+    "text":"A registered plan manager can pay providers, keep financial records and help you manage your funding. You still choose your supports and providers and remain responsible for spending in line with your plan. Some supports have additional provider registration requirements; ask your plan manager or the NDIA about your particular support."
+  },
+  {
+    "id":"ndis-provider-finder", "title":"Finding NDIS providers", "scope":"ndis",
+    "url":"https://www.ndis.gov.au/participants/working-providers/finding-providers/provider-finder", "reviewedAt":"2026-10-09",
+    "keywords":["find provider","provider finder","registered providers","choose provider"],
+    "text":"The NDIS provider finder is a starting point for finding registered providers. Ask about the supports you need, service area, availability and how they work with your plan. Confirm a provider's registration where that is required for your supports."
+  },
+  {
+    "id":"ndis-complaints", "title":"Raise an issue about NDIS supports", "scope":"ndis",
+    "url":"https://www.ndiscommission.gov.au/complaints", "reviewedAt":"2026-10-09",
+    "keywords":["complaint","complain","report","unsafe support","abuse","rights","quality","safeguards"],
+    "text":"For a concern about the quality or safety of NDIS supports, the NDIS Quality and Safeguards Commission explains how to report an issue or make a complaint. If someone is in immediate danger, call 000. You can also ask to speak with the Care Beyond Expectations team."
+  }
+]
