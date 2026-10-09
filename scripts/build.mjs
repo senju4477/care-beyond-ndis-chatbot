@@ -1,0 +1,17 @@
+import {readFile,writeFile,mkdir,copyFile} from 'node:fs/promises';
+import {fileURLToPath} from 'node:url';
+import {dirname,resolve,join} from 'node:path';
+import {providerKnowledge} from '../app/lib/knowledge.mjs';
+const root=resolve(dirname(fileURLToPath(import.meta.url)),'..');
+const profile=JSON.parse(await readFile(join(root,'data/tenants/care-beyond.json'),'utf8'));
+const shared=JSON.parse(await readFile(join(root,'data/ndis.json'),'utf8'));
+await mkdir(join(root,'dist'),{recursive:true});
+await copyFile(join(root,'app/lib/knowledge.mjs'),join(root,'dist/knowledge.js'));
+await writeFile(join(root,'dist/public-data.json'),JSON.stringify({profile,preview:true,aiEnabled:false,emailEnabled:false,documents:[...shared,...providerKnowledge(profile)]}));
+const index=await readFile(join(root,'dist/index.html'),'utf8');
+const chat=index.match(/<section class="chat-shell"[\s\S]*?<\/section>/)?.[0];
+const dialog=index.match(/<dialog [\s\S]*?<\/dialog>/)?.[0];
+if(!chat||!dialog)throw new Error('Chat or handoff markup is missing');
+await writeFile(join(root,'dist/widget.html'),`<!doctype html><html lang="en-AU"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>Care Beyond support assistant</title><link rel="stylesheet" href="app.css"><link rel="icon" href="favicon.svg"></head><body class="widget-body">${chat.replace('</header>','<button class="icon-button" id="closeWidget" aria-label="Close assistant">×</button></header>')}${dialog}<script type="module" src="app.js"></script></body></html>`);
+for(const file of ['index.html','widget.html','admin.html','app.js','app.css','embed.js','admin.js'])await readFile(join(root,'dist',file));
+console.log('Build complete. Output: dist. Hostinger entry: app/server.mjs.');
