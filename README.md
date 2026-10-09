@@ -36,7 +36,7 @@ The live site contains inconsistent legacy email/phone footer details and a regi
 
 ## Deploy on Hostinger
 
-Create a separate Node.js Web App. Import this project using Hostinger's supported repository or upload workflow. If uploading a ZIP, keep `package.json` at the project root. Use:
+Create a separate Node.js Web App and connect `centredbycare.com.au` as its hosting domain. The chatbot continues to serve Care Beyond Expectations on `carebeyondexp.com.au`; this hosting address does not change its business profile. Import this project using Hostinger's supported repository or upload workflow. If uploading a ZIP, keep `package.json` at the project root. Use:
 
 | Setting | Value |
 | --- | --- |
@@ -56,7 +56,7 @@ Set environment variables in Hostinger; **do not commit passwords or API keys**.
 | Variable | Set to |
 | --- | --- |
 | NODE_ENV | production |
-| SITE_URL | The real HTTPS address of the chatbot Node app |
+| SITE_URL | https://centredbycare.com.au |
 | OPENAI_API_KEY | Your OpenAI API project key; leave blank for approved knowledge answers |
 | OPENAI_MODEL | gpt-4.1-mini, or a tested compatible Responses model |
 | SMTP_HOST | smtp.hostinger.com |
@@ -79,10 +79,10 @@ Hostinger SMTP reference: https://www.hostinger.com/support/4305847-set-up-hosti
 
 ## Add the widget to WordPress
 
-After deployment, replace `YOUR_CHATBOT_HTTPS_ORIGIN` with the real Node app origin. Add this in an Elementor HTML widget or your site's footer/custom-code facility:
+After deploying the Node.js app at `https://centredbycare.com.au`, add this script to the Care Beyond Expectations WordPress website at `https://carebeyondexp.com.au`, using an Elementor HTML widget or your site's footer/custom-code facility:
 
 ```html
-<script src="YOUR_CHATBOT_HTTPS_ORIGIN/embed.js" data-tenant="care-beyond" defer></script>
+<script src="https://centredbycare.com.au/embed.js" data-tenant="care-beyond" defer></script>
 ```
 
 The widget is isolated in an iframe. The Node app's allowed origins and frame policy already include the Care Beyond website; set `SITE_URL` to the deployed Node origin. The private ChatGPT review is for the owner to inspect and is not suitable for a public WordPress embed. Use the Hostinger app address for real website visitors.
