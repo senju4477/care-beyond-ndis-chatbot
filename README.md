@@ -51,6 +51,8 @@ Create a separate Node.js Web App and connect `centredbycare.com.au` as its host
 
 This is a Node server. The `dist` directory contains browser assets; serve it through the Node app to enable `/api/chat`, `/api/handoff` and `/api/admin/*`. The app does not require Docker, Workers, serverless functions, or SSH.
 
+Hostinger loads `app/server.mjs` by importing it from a hosting runner. This entry file starts listening automatically; do not wrap startup in `require.main === module` or a `process.argv[1]` check. The reusable application factory is in `app/application.mjs` so tests can import it without starting the production server. If runtime logs report "App did not call listen() within 3 seconds", redeploy the latest `main` with the entry file still set to `app/server.mjs`.
+
 Set environment variables in Hostinger; **do not commit passwords or API keys**. `.env.example` is a complete non-secret starting point.
 
 | Variable | Set to |
