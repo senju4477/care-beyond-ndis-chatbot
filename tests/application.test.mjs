@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import {readFile,mkdtemp,rm} from 'node:fs/promises';
 import {tmpdir} from 'node:os';
 import {join} from 'node:path';
-import {createApplication} from '../app/server.mjs';
+import {createApplication} from '../app/application.mjs';
 import {providerKnowledge,makeResponse} from '../app/lib/knowledge.mjs';
 import {aiAnswer} from '../app/lib/ai.mjs';
 import {extractDocument,chunkDocument} from '../app/lib/documents.mjs';
